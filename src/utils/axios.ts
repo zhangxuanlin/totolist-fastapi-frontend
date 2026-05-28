@@ -3,7 +3,7 @@ import { message } from 'antd';
 
 // 创建 axios 实例
 const service: AxiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_DATA_API_BASE_URL || '/api',
+  baseURL: `${import.meta.env.VITE_DATA_API_BASE_URL}/api` || '/api',
   timeout: 600000,
   headers: {
     'Content-Type': 'application/json;charset=UTF-8',
